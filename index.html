@@ -4,53 +4,262 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Admin</title>
   </head>
   <body>
-    <div class="left-container">
-      <h1>Dashboard</h1>
-      <div class="mainControl">
-        <a href="#" class="home">Home</a>
-        <a href="#" class="profile">Profile</a>
-        <a href="#" class="messages">Messages</a>
-        <a href="#" class="history">History</a>
-        <a href="#" class="tasks">Tasks</a>
-        <a href="#" class="communities">Communities</a>
-      </div>
-      <div class="secControl">
-        <a href="#" class="settings">Settings</a>
-        <a href="#" class="support">Support</a>
-        <a href="#" class="privacy">Privacy</a>
-      </div>
-    </div>
-    <div class="right-container">
-      <header>
-        <div class="topHeader">
-          <div class="leftHeader">
-            <img src="" alt="" class="search-ic" />
-            <input type="search" name="search" id="search" class="search" />
+    <div class="main">
+      <div class="left-container">
+        <div class="mainControl">
+          <div class="home">
+            <img src="./svg/house-user.svg" alt="" class="home-ic" />
+            <a href="#" class="home">Home</a>
           </div>
-          <div class="rightHeader">
-            <img src="" alt="" class="notification" />
-            <img src="" alt="" class="profile-ic" />
-            <p class="userName">Mohamed Hasan</p>
+          <div class="profile">
+            <img src="./svg/user-square.svg" alt="" class="profile-ic" />
+            <a href="#" class="profile">Profile</a>
+          </div>
+          <div class="messages">
+            <img src="./svg/envelopes.svg" alt="" class="messages-ic" />
+            <a href="#" class="messages">Messages</a>
+          </div>
+          <div class="history">
+            <img src="./svg/history.svg" alt="" class="history-ic" />
+            <a href="#" class="history">History</a>
+          </div>
+          <div class="tasks">
+            <img src="./svg/clipboard-notes.svg" alt="" class="tasks-ic" />
+            <a href="#" class="tasks">Tasks</a>
+          </div>
+          <div class="communitites">
+            <img src="./svg/feedback.svg" alt="" class="communities-ic" />
+            <a href="#" class="communities">Communities</a>
           </div>
         </div>
-        <div class="bottomHeader">
-          <div class="leftB">
-            <img src="" alt="" class="profile-big" />
-            <div class="textuser">
-              <p>Hi there,</p>
-              <p>Mohamed Hasan (@Mohamed)</p>
+        <div class="secControl">
+          <div class="settings">
+            <img src="./svg/setting.svg" alt="" class="settings-ic" />
+            <a href="#" class="settings">Settings</a>
+          </div>
+          <div class="support">
+            <img src="./svg/comment-question.svg" alt="" class="support-ic" />
+            <a href="#" class="support">Support</a>
+          </div>
+          <div class="privacy">
+            <img src="./svg/keyhole-circle.svg" alt="" class="privacy-ic" />
+            <a href="#" class="privacy">Privacy</a>
+          </div>
+        </div>
+        <div class="credit">
+          <p>The Odin project <a href="https://github.com/m7bdi3">@Badi3</a></p>
+        </div>
+      </div>
+      <div class="right-container">
+        <header>
+          <div class="topHeader">
+            <div class="leftHeader">
+              <div class="dash">
+                <img src="./svg/dashboard.svg" alt="" class="dash-ic" />
+                <h1>Dashboard</h1>
+              </div>
+            </div>
+            <div class="leftB">
+              <img src="./svg/search.svg" alt="" class="search-ic" />
+              <input type="search" name="search" id="search" class="search" />
+            </div>
+            <div class="rightHeader">
+              <img src="./svg/bell.svg" alt="" class="notification-ic" />
+              <img
+                src="./svg/avatar-svgrepo-com.svg"
+                alt=""
+                class="profile-ic"
+              />
+              <p class="userName">Mohamed Hasan</p>
             </div>
           </div>
-          <div class="rightB">
-            <button class="new">New</button>
-            <button class="upload">Upload</button>
-            <button class="share">Share</button>
+          <div class="bottomHeader">
+            <div class="rightB">
+              <button class="new">New</button>
+              <button class="upload">Upload</button>
+              <button class="share">Share</button>
+            </div>
+          </div>
+        </header>
+        <div class="content">
+          <div class="left-content">
+            <li class="yp">Your Projects</li>
+            <div class="cards">
+              <span class="card1">
+                <div class="text">
+                  <h2>Super Cool Project</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eveniet, dolor eligendi sint sunt fugiat, enim vel tempora
+                    labore harum impedit quo velit quasi
+                  </p>
+                  <div class="texy-ic">
+                    <img src="./svg/heart-alt.svg" alt="" class="fav-ic" />
+                    <img src="./svg/eye.svg" alt="" class="seen-ic" />
+                    <img src="./svg/share-alt.svg" alt="" class="share-ic" />
+                  </div>
+                </div>
+              </span>
+              <span class="card2">
+                <div class="text">
+                  <h2>Less Cool Project</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eveniet, dolor eligendi sint sunt fugiat, enim vel tempora
+                    labore harum impedit quo velit quasi
+                  </p>
+                  <div class="texy-ic">
+                    <img src="./svg/heart-alt.svg" alt="" class="fav-ic" />
+                    <img src="./svg/eye.svg" alt="" class="seen-ic" />
+                    <img src="./svg/share-alt.svg" alt="" class="share-ic" />
+                  </div>
+                </div>
+              </span>
+              <span class="card3">
+                <div class="text">
+                  <h2>Impossible App</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eveniet, dolor eligendi sint sunt fugiat, enim vel tempora
+                    labore harum impedit quo velit quasi
+                  </p>
+                  <div class="texy-ic">
+                    <img src="./svg/heart-alt.svg" alt="" class="fav-ic" />
+                    <img src="./svg/eye.svg" alt="" class="seen-ic" />
+                    <img src="./svg/share-alt.svg" alt="" class="share-ic" />
+                  </div>
+                </div>
+              </span>
+              <span class="card4">
+                <div class="text">
+                  <h2>Easy Peasy App</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eveniet, dolor eligendi sint sunt fugiat, enim vel tempora
+                    labore harum impedit quo velit quasi
+                  </p>
+                  <div class="texy-ic">
+                    <img src="./svg/heart-alt.svg" alt="" class="fav-ic" />
+                    <img src="./svg/eye.svg" alt="" class="seen-ic" />
+                    <img src="./svg/share-alt.svg" alt="" class="share-ic" />
+                  </div>
+                </div>
+              </span>
+              <span class="card5">
+                <div class="text">
+                  <h2>Ad Blocker</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eveniet, dolor eligendi sint sunt fugiat, enim vel tempora
+                    labore harum impedit quo velit quasi
+                  </p>
+                  <div class="texy-ic">
+                    <img src="./svg/heart-alt.svg" alt="" class="fav-ic" />
+                    <img src="./svg/eye.svg" alt="" class="seen-ic" />
+                    <img src="./svg/share-alt.svg" alt="" class="share-ic" />
+                  </div>
+                </div>
+              </span>
+              <span class="card6">
+                <div class="text">
+                  <h2>Money Maker</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eveniet, dolor eligendi sint sunt fugiat, enim vel tempora
+                    labore harum impedit quo velit quasi
+                  </p>
+                  <div class="texy-ic">
+                    <img src="./svg/heart-alt.svg" alt="" class="fav-ic" />
+                    <img src="./svg/eye.svg" alt="" class="seen-ic" />
+                    <img src="./svg/share-alt.svg" alt="" class="share-ic" />
+                  </div>
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="right-content">
+            <div class="top-content">
+              <li class="ap">Announcement</li>
+              <div class="announce">
+                <div class="topic1">
+                  <li>Site Maintenance</li>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquam esse illum obcaecati quia doloribus placeat!
+                  </p>
+                </div>
+                <div class="topic2">
+                  <li>Community Share Day</li>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquam esse illum obcaecati quia doloribus placeat!
+                  </p>
+                </div>
+                <div class="topic3">
+                  <li>Update Privacy Policy</li>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aliquam esse illum obcaecati quia doloribus placeat!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-content">
+              <li class="tp">Trending</li>
+              <div class="trending">
+                <div class="trend1">
+                  <img
+                    src="./svg/avatar-svgrepo-com (1).svg"
+                    alt=""
+                    class="ic1"
+                  />
+                  <div class="trend">
+                    <h2>@tegan</h2>
+                    <p>World Peace Builder</p>
+                  </div>
+                </div>
+                <div class="trend2">
+                  <img
+                    src="./svg/avatar-svgrepo-com (2).svg"
+                    alt=""
+                    class="ic2"
+                  />
+                  <div class="trend">
+                    <h2>@Morgan</h2>
+                    <p>Super Cool Project</p>
+                  </div>
+                </div>
+                <div class="trend3">
+                  <img
+                    src="./svg/avatar-svgrepo-com (3).svg"
+                    alt=""
+                    class="ic3"
+                  />
+                  <div class="trend">
+                    <h2>@Kendall</h2>
+                    <p>Life Changing App</p>
+                  </div>
+                </div>
+                <div class="trend4">
+                  <img
+                    src="./svg/avatar-svgrepo-com (1).svg"
+                    alt=""
+                    class="ic4"
+                  />
+                  <div class="trend">
+                    <h2>@ALex</h2>
+                    <p>No Traffic Maker</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </header>
+      </div>
     </div>
   </body>
 </html>

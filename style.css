@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", "Exo 2", sans-serif;
+  margin: 0;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+.profile-big {
+  width: 70px;
+  height: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+}
+
+/********Main Controller********/
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.left-container {
+  background-color: #355070;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  gap: 4rem;
+  padding: 4rem;
+  color: rgb(245, 245, 245);
+  min-width: 20%;
+  min-height: 100vh;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 80%;
+  gap: 1rem;
+}
+
+.content {
+  margin: 2rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 0.75fr 0.25fr;
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.left-content {
+  grid-area: 1 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-content {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.bottom-content {
+  grid-area: 2 / 2/ 3 / 3;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+/**********************************/
+
+.mainControl {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.credit {
+  display: flex;
+  justify-content: center;
+}
+.credit a {
+  color: #eaac8b;
+}
+.dash,
+.home,
+.profile,
+.messages,
+.history,
+.tasks,
+.communitites,
+.settings,
+.support,
+.privacy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8vw;
+}
+
+.secControl {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #6d597a;
+  padding: 2rem;
+  color: rgb(245, 245, 245);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 30%;
+  gap: 2rem;
+}
+.topHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: larger;
+}
+.leftHeader {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.leftB input {
+  width: 30vw;
+  height: 35px;
+  border-radius: 14px;
+  border: 0px;
+  border-style: none;
+}
+.rightHeader {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.bottomHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 1rem;
+}
+.leftB {
+  display: flex;
+  gap: 1rem;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.rightB {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  gap: 2rem;
+}
+.rightB button {
+  height: 30px;
+  width: 80px;
+  border-radius: 8px;
+  border-style: none;
+  color: rgb(245, 245, 245);
+  background: #eaac8b;
+}
+
+.yp {
+  color: #355070;
+  font-family: "Exo 2";
+  font-weight: 1000;
+  font-size: larger;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.cards span {
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: -8px 0px 0px 0px #6d597a;
+  transition: 0.4s;
+  color: #ececec;
+  background-color: #224b80ad;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.card1 {
+  grid-area: 1 / 1 / 2 / 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card2 {
+  grid-area: 1 / 2 / 2 / 3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card3 {
+  grid-area: 2 / 1 / 3 / 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card4 {
+  grid-area: 2 / 2 / 3 / 3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card4:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card5 {
+  grid-area: 3 / 1 / 4 / 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card5:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card6 {
+  grid-area: 3 / 2 / 4 / 3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card6:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.announce {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  color: #ececec;
+  background-color: #224b80ad;
+  border-radius: 5px;
+}
+.ap {
+  color: #355070;
+  font-weight: 1000;
+  font-family: "Exo 2";
+  font-size: larger;
+}
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  color: #ececec;
+  background-color: #224b80ad;
+  border-radius: 5px;
+}
+.trend1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.trend2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.trend3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.trend4 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.tp {
+  font-weight: 1000;
+  font-family: "Exo 2";
+  font-size: larger;
+  color: #355070;
+}
+.ic1,
+.ic2,
+.ic3,
+.ic4 {
+  width: 50px;
+  height: 50px;
+}
+.trending p {
+  font-weight: 10;
+  font-size: 20px;
+}
+.trending h2 {
+  font-weight: 500;
+  font-size: 15px;
+}
+.texy-ic {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.announce li {
+  font-family: "Exo 2";
+  font-weight: 700;
+}
