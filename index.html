@@ -5,55 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
     <title>Admin</title>
   </head>
   <body>
-    <div class="main">
-      <div class="left-container">
-        <div class="mainControl">
-          <div class="home">
-            <img src="./svg/house-user.svg" alt="" class="home-ic" />
-            <a href="#" class="home">Home</a>
-          </div>
-          <div class="profile">
-            <img src="./svg/user-square.svg" alt="" class="profile-ic" />
-            <a href="#" class="profile">Profile</a>
-          </div>
-          <div class="messages">
-            <img src="./svg/envelopes.svg" alt="" class="messages-ic" />
-            <a href="#" class="messages">Messages</a>
-          </div>
-          <div class="history">
-            <img src="./svg/history.svg" alt="" class="history-ic" />
-            <a href="#" class="history">History</a>
-          </div>
-          <div class="tasks">
-            <img src="./svg/clipboard-notes.svg" alt="" class="tasks-ic" />
-            <a href="#" class="tasks">Tasks</a>
-          </div>
-          <div class="communitites">
-            <img src="./svg/feedback.svg" alt="" class="communities-ic" />
-            <a href="#" class="communities">Communities</a>
-          </div>
-        </div>
-        <div class="secControl">
-          <div class="settings">
-            <img src="./svg/setting.svg" alt="" class="settings-ic" />
-            <a href="#" class="settings">Settings</a>
-          </div>
-          <div class="support">
-            <img src="./svg/comment-question.svg" alt="" class="support-ic" />
-            <a href="#" class="support">Support</a>
-          </div>
-          <div class="privacy">
-            <img src="./svg/keyhole-circle.svg" alt="" class="privacy-ic" />
-            <a href="#" class="privacy">Privacy</a>
-          </div>
-        </div>
-        <div class="credit">
-          <p>The Odin project <a href="https://github.com/m7bdi3">@Badi3</a></p>
-        </div>
+    <div class="left-container" id="left-container">
+      <menu class="menu">
+        <button class="menu__item active" style="--bgColorItem: #355070; display: flex;gap:0.3rem;" >
+          <img src="./svg/house-user.svg" alt="">
+          Home
+        </button>
+        <button class="menu__item" style="--bgColorItem: #70223e;display: flex;gap:0.3rem;">
+          <img src="./svg/user-square.svg" alt="">
+          Profile
+        </button>
+        <button class="menu__item" style="--bgColorItem: #df713e;display: flex;gap:0.3rem;" >
+          <img src="./svg/envelopes.svg" alt="">
+          Messages
+        </button>
+        <button class="menu__item" style="--bgColorItem: #5516b9;display: flex;gap:0.3rem;" > 
+<img src="./svg/history.svg" alt="">
+History
+        </button>
+        <button class="menu__item" style="--bgColorItem:#a74534;display: flex;gap:0.3rem;">
+          <img src="./svg/clipboard-notes.svg" alt="">
+          Tasks
+        </button>
+        <button class="menu__item" style="--bgColorItem:#7a3256;display: flex;gap:0.3rem;">
+          <img src="./svg/feedback.svg" alt="">
+          Communities
+        </button>
+        <button class="menu__item" style="--bgColorItem:#553e6b;display: flex;gap:0.3rem; ">
+          <img src="./svg/setting.svg" alt="">
+          Settings
+        </button>
+        <button class="menu__item" style="--bgColorItem:#727170;display: flex;gap:0.3rem;">
+          <img src="./svg/comment-question.svg" alt="">
+          Support
+        </button>
+        <button class="menu__item" style="--bgColorItem:#383b3a;display: flex;gap:0.3rem;">
+          <img src="./svg/keyhole-circle.svg" alt="">
+          Privacy
+        </button>
+        <div class="menu__border"></div>
+      </menu>
+      <div class="svg-container">
+        <svg viewBox="0 0 202.9 45.5" >
+          <clipPath id="menu" clipPathUnits="objectBoundingBox" transform="scale(0.0049285362247413 0.021978021978022)">
+            <path  d="M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7
+              c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5
+              c9.2,3.6,17.6,4.2,23.3,4H6.7z"/>
+          </clipPath>
+        </svg>
       </div>
+      <div class="credit">
+        <p>The Odin project <a href="https://github.com/m7bdi3">@Badi3</a></p>
+      </div>
+    </div>
+    
       <div class="right-container">
         <header>
           <div class="topHeader">
