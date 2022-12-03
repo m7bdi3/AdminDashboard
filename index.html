@@ -9,73 +9,32 @@
     <title>Admin</title>
   </head>
   <body>
-    <div class="left-container" id="left-container">
-      <menu class="menu">
-        <button class="menu__item active" style="--bgColorItem: #355070; display: flex;gap:0.3rem;" >
-          <img src="./svg/house-user.svg" alt="">
-          Home
-        </button>
-        <button class="menu__item" style="--bgColorItem: #70223e;display: flex;gap:0.3rem;">
-          <img src="./svg/user-square.svg" alt="">
-          Profile
-        </button>
-        <button class="menu__item" style="--bgColorItem: #df713e;display: flex;gap:0.3rem;" >
-          <img src="./svg/envelopes.svg" alt="">
-          Messages
-        </button>
-        <button class="menu__item" style="--bgColorItem: #5516b9;display: flex;gap:0.3rem;" > 
-<img src="./svg/history.svg" alt="">
-History
-        </button>
-        <button class="menu__item" style="--bgColorItem:#a74534;display: flex;gap:0.3rem;">
-          <img src="./svg/clipboard-notes.svg" alt="">
-          Tasks
-        </button>
-        <button class="menu__item" style="--bgColorItem:#7a3256;display: flex;gap:0.3rem;">
-          <img src="./svg/feedback.svg" alt="">
-          Communities
-        </button>
-        <button class="menu__item" style="--bgColorItem:#553e6b;display: flex;gap:0.3rem; ">
-          <img src="./svg/setting.svg" alt="">
-          Settings
-        </button>
-        <button class="menu__item" style="--bgColorItem:#727170;display: flex;gap:0.3rem;">
-          <img src="./svg/comment-question.svg" alt="">
-          Support
-        </button>
-        <button class="menu__item" style="--bgColorItem:#383b3a;display: flex;gap:0.3rem;">
-          <img src="./svg/keyhole-circle.svg" alt="">
-          Privacy
-        </button>
-        <div class="menu__border"></div>
-      </menu>
-      <div class="svg-container">
-        <svg viewBox="0 0 202.9 45.5" >
-          <clipPath id="menu" clipPathUnits="objectBoundingBox" transform="scale(0.0049285362247413 0.021978021978022)">
-            <path  d="M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7
-              c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5
-              c9.2,3.6,17.6,4.2,23.3,4H6.7z"/>
-          </clipPath>
-        </svg>
-      </div>
-      <div class="credit">
-        <p>The Odin project <a href="https://github.com/m7bdi3">@Badi3</a></p>
-      </div>
-    </div>
-    
-      <div class="right-container">
-        <header>
+    <div class="wrapper">
+      <div class="top_navbar">
+        <div class="hamburger" onclick="func()">
+          <div class="inner_hamburger">
+            <span class="arrow">
+                <img src="./svg/bars.svg" alt="">
+            </span>
+          </div>
+        </div>
+        <header class="header">
           <div class="topHeader">
-            <div class="leftHeader">
-              <div class="dash">
+            <div class="logo">
+              <a href="#">
                 <img src="./svg/dashboard.svg" alt="" class="dash-ic" />
-                <h1>Dashboard</h1>
-              </div>
+                Dashboard</a>
             </div>
+            
+          </div>
+          <div class="middleHeader">
             <div class="leftB">
               <img src="./svg/search.svg" alt="" class="search-ic" />
               <input type="search" name="search" id="search" class="search" />
             </div>
+          </div>
+          <div class="bottomHeader">
+            
             <div class="rightHeader">
               <img src="./svg/bell.svg" alt="" class="notification-ic" />
               <img
@@ -85,8 +44,6 @@ History
               />
               <p class="userName">Mohamed Hasan</p>
             </div>
-          </div>
-          <div class="bottomHeader">
             <div class="rightB">
               <button class="new">New</button>
               <button class="upload">Upload</button>
@@ -94,6 +51,145 @@ History
             </div>
           </div>
         </header>
+      </div>
+      <div class="left_body">
+        <div class="left-container">
+          <div class="menu">
+            <ul>
+              <li>
+                <a  class="menuItems"
+                  href="#"
+                  id="home"
+                  style="display: flex; gap: 0.3rem"
+                  onclick="homefunc(), active()"
+                >
+                  <span class="icon">
+                    <img src="./svg/house-user.svg" alt=""
+                  /></span>
+                  <span class="list">Home</span>
+                </a>
+              </li>
+              <li>
+                <a
+                class="menuItems active"   
+                href="#"
+                id="profile"
+                  style="display: flex; gap: 0.3rem"
+                  onclick="profilefunc(),active()"
+                >
+                  <span class="icon"
+                    ><img src="./svg/user-square.svg" alt=""
+                  /></span>
+                  <span class="list">Profile</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="menuItems"  
+                  id="messages"               
+                  style="display: flex; gap: 0.3rem"
+                  onclick="messagefunc(),active()"
+
+                >
+                  <span class="icon"
+                    ><img src="./svg/envelopes.svg" alt=""
+                  /></span>
+                  <span class="list">Messages</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="menuItems"        
+                  id="history"       
+                  onclick="historyfunc(),active()"  
+                style="display: flex; gap: 0.3rem"
+                >
+                  <span class="icon"
+                    ><img src="./svg/history.svg" alt=""
+                  /></span>
+                  <span class="list">History</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="menuItems"     
+                  id="tasks"
+                  style="display: flex; gap: 0.3rem"
+                  onclick="tasksfunc(),active()"
+                >
+                  <span class="icon"
+                    ><img src="./svg/clipboard-notes.svg" alt=""
+                  /></span>
+                  <span class="list">Tasks</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="menuItems" 
+                  id="communities"       
+                  style=" display: flex; gap: 0.3rem"
+                  onclick="commfunc(),active()"
+                >
+                  <span class="icon"
+                    ><img src="./svg/feedback.svg" alt=""
+                  /></span>
+                  <span class="list">Communities</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="menuItems"    
+                  id="settings"     
+                  style="display: flex; gap: 0.3rem"
+                  onclick="setfunc(),active()" 
+                >
+                  <span class="icon"
+                    ><img src="./svg/setting.svg" alt=""
+                  /></span>
+                  <span class="list">Settings</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  id="support"
+                  class="menuItems"
+                  style="display: flex; gap: 0.3rem"
+                  onclick="supfunc(),active()"
+                >
+                  <span class="icon"
+                    ><img src="./svg/comment-question.svg" alt=""
+                  /></span>
+                  <span class="list">Support</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  id="privacy"
+                  class="menuItems"
+                  style="display: flex; gap: 0.3rem"
+                  onclick="privfunc(),active()"
+                >
+                  <span class="icon"
+                    ><img src="./svg/keyhole-circle.svg" alt=""
+                  /></span>
+                  <span class="list">Privacy</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="right-container">
+        
         <div class="content">
           <div class="left-content">
             <li class="yp">Your Projects</li>

@@ -1,52 +1,84 @@
-// Designed by:  Mauricio Bucardo
-// Original image:
-// https://dribbble.com/shots/5619509-Animated-Tab-Bar
+function func() {
+    const wrapper = document.querySelector(".wrapper");
+    const right_container = document.querySelector('.right-container');
+    const header = document.querySelector('header');
+    const hamburger = document.querySelector('.hamburger');
+    if (wrapper.classList == ('wrapper')) {
+        wrapper.classList.add('active');
+        right_container.style.width = '100%';
+        header.style.width = '100%';
+        hamburger.style.left = '-25px';
+        hamburger.style.top = '70%';
+        hamburger.addEventListener('mouseenter', () => {
+            if (hamburger.style.left == '-25px') {
+                hamburger.style.left = '5px'
+            }
+        });
+        hamburger.addEventListener('mouseleave', () => {
+            if (hamburger.style.left == '5px') {
+                hamburger.style.left = '-25px'
+            }
+        });
+    } else if (wrapper.classList == ('wrapper active')) {
+        wrapper.classList.remove('active');
+        right_container.style.width = '87%'
+        header.style.width = '87%';
+        hamburger.style.left = '227px';
+        hamburger.style.top = '5px';
 
-"use strict"; 
-
-const body = document.querySelector('.left-container');
-const bgColorsBody = ["#355070", "#70223e", "#df713e", "#5516b9", "#a74534", "#7a3256", "#553e6b", "#727170","#383b3a"];
-const menu = body.querySelector(".menu");
-const menuItems = menu.querySelectorAll(".menu__item");
-const menuBorder = menu.querySelector(".menu__border");
-let activeItem = menu.querySelector(".active");
-
-function clickItem(item, index) {
-
-    menu.style.removeProperty("--timeOut");
-    
-    if (activeItem == item) return;
-    
-    if (activeItem) {
-        activeItem.classList.remove("active");
     }
 
-    
-    item.classList.add("active");
-    body.style.backgroundColor = bgColorsBody[index];
-    activeItem = item;
-    offsetMenuBorder(activeItem, menuBorder);
-    
-    
 }
 
-function offsetMenuBorder(element, menuBorder) {
 
-    const offsetActiveItem = element.getBoundingClientRect();
-    const left = Math.floor(offsetActiveItem.left - menu.offsetLeft - (menuBorder.offsetWidth  - offsetActiveItem.width) / 2) +  "px";
-    menuBorder.style.transform = `translate3d(${left}, 0 , 0)`;
+/*function active() {
+    document.querySelector('.menuItems').classList.remove('.active');
+    if (document.querySelector('.menuItems'). =('.menuItems .active')) {
+        return
+    } else {
+        document.querySelector('.menuItems').classList.add('.active');
+    }
+}
+*/
+let obj = document.querySelectorAll('.menuItems');
 
+function active() {
+    obj.forEach(objs => {
+        objs.classList.remove('active');
+        objs.addEventListener('click', () => {
+            objs.classList.add('active')
+        })
+    });
 }
 
-offsetMenuBorder(activeItem, menuBorder);
+function homefunc() {
+    document.querySelector('.left-container').style.background = '#355070';
+}
 
-menuItems.forEach((item, index) => {
+function profilefunc() {
+    document.querySelector('.left-container').style.background = '#70223e';
+}
 
-    item.addEventListener("click", () => clickItem(item, index));
-    
-})
+function messagefunc() {
+    document.querySelector('.left-container').style.background = '#df713e';
+}
+function historyfunc() {
+    document.querySelector('.left-container').style.background = '#5516b9';
+}
+function tasksfunc() {
+    document.querySelector('.left-container').style.background = '#a74534';
+}
+function commfunc() {
+    document.querySelector('.left-container').style.background = '#553e6b';
 
-window.addEventListener("resize", () => {
-    offsetMenuBorder(activeItem, menuBorder);
-    menu.style.setProperty("--timeOut", "none");
-});
+}
+function setfunc() {
+    document.querySelector('.left-container').style.background = '#727170';
+}
+function supfunc() {
+    document.querySelector('.left-container').style.background = '#383b3a';
+}
+function privfunc() {
+    document.querySelector('.left-container').style.background = '#383b3a';
+
+}
